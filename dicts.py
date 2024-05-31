@@ -24,13 +24,9 @@ def decrement_items(inventory, items):
 
 
 def remove_item(inventory, item):
-    dic= dict()
-    for i in inventory:
-        if i == item:
-            pass
-        else:
-            dic[i] = inventory[i]
-    return dic
+    if item in inventory:
+        del inventory[item]
+    return inventory
 
 
 def list_inventory(inventory):
