@@ -1,3 +1,10 @@
+def create_inventory(items):
+    dic= dict()
+    for i in items:
+        dic[i] = items.count(i)
+    return dic
+
+
 def add_items(inventory, items):
     for i in items:
         if i in inventory:
